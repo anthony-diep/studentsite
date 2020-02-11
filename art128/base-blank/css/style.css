@@ -1,0 +1,55 @@
+/* CSS TABLE OF CONTENTS 
+
+#GLOBALS/BASE
+    #RESET
+    #COLORS
+    #TYPOGRAPHY
+        #BODY
+        #LINKS
+        #HEADINGS
+        #PARAGRAPHS
+        #LISTS
+        #HELPERS
+        #BLOCK QUOTES
+    #MEDIA
+        #IMAGES (RESPONSIVE)
+    #COMPONENTS/UI ELEMENTS
+        #BUTTONS
+    #LAYOUT
+        #CONTAINER
+        #MEDIA QUERIES
+        #GRID SYSTEM
+    #SITE STRUCTURES
+        #SITE HEADER
+            #SITE ID
+        #SITE MAIN
+        #SITE FOOTER
+        #SITE NAV
+            #TOGGLE NAV
+        #SECTIONS
+        #SUB PAGES
+*/
+
+
+/* GLOBAL RESET */
+* { box-sizing: border-box;} /* ASTERICK SET EVERYTHING TO NOT RENDER PADDING AND BORDER */
+body {margin: 0;}
+
+/* GLOBAL COLORS */
+body {
+    background: rgb(218, 212, 212);
+    color: rgba(235, 93, 11, 0.8);
+    }
+
+    a { color: rgb(61, 61, 54); }
+/* GLOBAL TYPOGRAPHY */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 88.75%; /* 14px */
+    line-height: 1.4;
+    /* align-content: center; */
+    /* text-align: center; */
+    }
+    p { max-width: 35em; }
+    a { text-decoration: none; }
+
