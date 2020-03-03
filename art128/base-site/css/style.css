@@ -37,7 +37,7 @@ body {margin: 0;}
 
 /* GLOBAL COLORS */
 body {
-    background: rgb(218, 212, 212);
+    background: rgb(247, 245, 245);
     color: rgba(235, 93, 11, 0.8);
     }
 
@@ -113,6 +113,12 @@ a:hover {
 
 a:visited {
     color: rgba(rgb(146, 107, 107), green, blue, alpha)
+}
+
+/* MEDIA */
+img {
+    max-width: 100%; /*2 lines universal code set responsive images */
+    height: auto;
 }
 
 /* BUTTONS */
@@ -237,12 +243,14 @@ body {
     }
 }
 
-.site-header a {
+.site-header a,
+.site-footer a {
     color: rgba(0,0,0,8);
     text-decoration: none;
 }
 
-.site-header a:hover {
+.site-header a:hover,
+.site-footer a:hover {
     color: rgba(0,0,0,1);
 }
 
@@ -257,7 +265,7 @@ body {
 
 .site-id a {
     display: block;
-    padding: .5em .0
+    padding: .25em 0;
 }
 
 .site-nav ul {
@@ -282,8 +290,41 @@ body {
 }
 
 .site-footer {
+    padding: 1em .5em 2em .5em;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 3em 0;
+}
+
+.hero {
+    text-align: center;
+    background-color: rgba(204,204,204,1);
+    padding: 4em 1em; 
+}
+
+.hero h2 {
+    font-size: 3em;
+    line-height: 1;
+}
+
+.hero p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .row {
+    text-align: center; 
+    background-color: rgba(0,0,0,.1);
+    padding: 4em 1em; 
+} */
+
+.column one-third {
 
 }
+
 
 /* FOR LAYOUT DEMO PURPOSES ONLY */
 
