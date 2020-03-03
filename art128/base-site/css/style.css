@@ -262,8 +262,10 @@ body {
 
 .site-nav ul {
     display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .site-nav li {
