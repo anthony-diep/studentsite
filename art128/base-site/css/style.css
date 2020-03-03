@@ -122,7 +122,9 @@ img {
 }
 
 /* BUTTONS */
-.button {
+.button,
+button {
+    font-size: 1em;
     display: inline-block;
     background-color: navy;
     color: white;
@@ -261,6 +263,7 @@ body {
 .site-id h1 {
     font-size: 1.5em;
     margin: 0;
+    text-align: center;
 }
 
 .site-id a {
@@ -313,16 +316,6 @@ section {
 .hero p {
     margin-left: auto;
     margin-right: auto;
-}
-
-/* .row {
-    text-align: center; 
-    background-color: rgba(0,0,0,.1);
-    padding: 4em 1em; 
-} */
-
-.column one-third {
-
 }
 
 
