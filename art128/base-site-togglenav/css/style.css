@@ -245,6 +245,11 @@ body {
     }
 }
 
+.site-header,
+.site-footer {
+    text-align: center;
+}
+
 .site-header a,
 .site-footer a {
     color: rgba(0,0,0,8);
@@ -287,6 +292,44 @@ body {
     display: block;
     padding: .5em 1em;
 }
+
+.menu-button {
+    position: absolute;
+    left: -9999px;
+    padding: .5em 1em;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 767px) {
+
+    .toggle-nav .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .toggle-nav .menu-button {
+        position:static;
+        left:auto;
+    }
+    .toggle-nav .site-nav {
+        text-align: right;
+    }
+
+    .toggle-nav .site nav ul {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .toggle-nav.expanded .site-nav ul {
+        position: static;
+        left: auto;
+        display: block;
+    }
+}
+
 
 /* .site-main {
     
