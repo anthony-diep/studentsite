@@ -198,27 +198,27 @@ body {
 /* GRID SYSTEM */
 
 .column {
-    margin-top: 2%; /* ADJUST GAP BETWEEN GRID */
-    margin-bottom: 2%; /* ADJUST GAP BETWEEN GRID */
+    margin-top: 1%; /* ADJUST GAP BETWEEN GRID */
+    margin-bottom: 1%; /* ADJUST GAP BETWEEN GRID */
 }
 
 @media (min-width: 768px) {
     .row {
         display: flex;
-        margin-left: -2%;
-        margin-right: -2%;
+        margin-left: -1%;
+        margin-right: -1%;
     }
     .column {
         flex-grow: 0;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
     .whole {width:100%}
-    .one-half {width:46%}
-    .one-third {width:29.33%}
-    .one-fourth {width:21%}
-    .push-one-fourth {margin-left: 27%;}
-    .push-one-third {margin-left: 35%;}
+    .one-half {width:48%}
+    .one-third {width:31.3333%}
+    .one-fourth {width:23%}
+    .push-one-fourth {margin-left: 26%;}
+    .push-one-third {margin-left: 34.3333%;}
     .push-one-half {margin-left: 52%;}
 
     .row.centered {
