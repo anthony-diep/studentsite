@@ -291,6 +291,10 @@ body {
     
 } */
 
+.site-id .logo {
+    max-width: 150px;
+}
+
 .site-id h1 {
     font-size: 1.5em;
     margin: 0;
