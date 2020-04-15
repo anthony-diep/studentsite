@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    font-size: 3em; /* 48px based on a 16px em */
+    font-size: 4em; /* 48px based on a 16px em */
     line-height: 1; /*LINE HEIGHT ADJUST LEASING */
 }
 
@@ -239,7 +239,7 @@ body {
 @media (min-width: 768px) {
     .row {
         display: flex;
-        margin-left: -1%;
+        margin-left: -10%;
         margin-right: -1%;
     }
     .column {
@@ -333,7 +333,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap;
+
 }
 
 .site-nav li {
@@ -464,6 +464,125 @@ section:last-child {
 #causes { background-image: url('../img/bg4.png'); }
 #treatments { background-image: url('../img/bg5.png'); }
 #support { background-image: url('../img/bg6.png'); }
+
+
+/* CARDS */
+
+.aboutcard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em 0;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+}
+
+.areascard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em 0;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: center;
+}
+
+.typescard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em 0;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: center;
+}
+
+.causescard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em 0;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: center;
+}
+
+.treatmentscard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em 0;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: center;
+}
+
+.areascardtop {
+    background: white;
+    border: 2px solid black;
+    max-width: 200px;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.treatmentscardtop {
+    background: white;
+    border: 2px solid black;
+    max-width: 200px;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.typescardtop {
+    background: white;
+    border: 2px solid black;
+    max-width: 200px;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.causescardtop {
+    background: white;
+    border: 2px solid black;
+    max-width: 200px;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.treatmentscardtop {
+    background: white;
+    border: 2px solid black;
+    max-width: 200px;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.supportcardtop {
+    background: white;
+    border: 2px solid black;
+    max-width: 200px;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
 
 /* ABOUT */
 .hero {
