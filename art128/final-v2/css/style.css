@@ -154,6 +154,17 @@ img {
     height: auto;
 }
 
+.aboutimage {
+    width: 40%;
+    margin-left: 2%;
+}
+
+.causesimage {
+    max-width: 150%;
+    align-items: right;
+}
+
+
 /* BUTTONS */
 .button,
 button,
@@ -473,6 +484,8 @@ section:last-child {
     border: 5px solid black;
     margin: 2em 0;
     padding: 2em;
+    margin-left: 18%;
+    max-height: 10%;
     box-shadow: 15px 15px 0 0 black;
 }
 
@@ -635,7 +648,7 @@ section:last-child {
     margin: 2em 0;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
-    text-align: center;
+    text-align: left;
 }
 
 .areascardtop {
@@ -786,10 +799,15 @@ input[type="submit"] {
     margin-bottom: 3em;
 }
 
-.section-title::after {
+.section-title-left {
+    text-align: left;
+    margin-bottom: 3em;
+}
+
+.section-title-left::after {
     content: "";
     display: block;
-    width: 900px;
+    width: 1000px;
     margin: 0.5em auto;
     border-bottom: 4px solid black;
 }
