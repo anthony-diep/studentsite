@@ -228,9 +228,10 @@ img {
 
 .lfootimage {
     float: left;
-    margin-left: -5%;
+    margin-left: -5%; 
     position: relative; 
     z-index: 1;
+    max-width: 5%;
 }
 
 .rfootimage {
@@ -583,8 +584,10 @@ section:last-child {
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: center;
-    margin-left: 6%;
-    max-width: 20%;
+    margin-left: 13%;
+    max-width: 25%;
+    height: 500px;
+    width: 25%;
     float: left;
 }
 
@@ -596,7 +599,9 @@ section:last-child {
     box-shadow: 15px 15px 0 0 black;
     text-align: center;
     margin-left: 60%;
-    max-width: 20%;
+    max-width: 25%;
+    height: 500px;
+    width: 25%;
 }
 
 .bubble3card {
@@ -606,8 +611,10 @@ section:last-child {
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: center;
-    max-width: 20%;
-    margin-left: 6%;
+    max-width: 25%;
+    margin-left: 13%;
+    height: 400px;
+    width: 25%;
     float: left;
 }
 
@@ -618,8 +625,10 @@ section:last-child {
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: center;
-    max-width: 20%;
+    max-width: 25%;
     margin-left: 60%;
+    height: 500px;
+    width: 25%;
 }
 
 .typescard {
@@ -760,9 +769,9 @@ section:last-child {
 .antipercircle {
     background: white;
     border-radius: 50%;
-    max-width: 20%;
-    max-height: 20%;
-    margin-left: 18%;
+    width: 20%;
+    height: 20%;
+    margin-left: 20%;
     position: relative; 
     z-index: 11;
     float: left;
@@ -792,6 +801,18 @@ section:last-child {
     margin-left: 10%;
     position: absolute; 
     z-index: 4;
+    float: left;
+}
+
+.ioncircle {
+    background: white;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin-left: 30%;
+    position: relative; 
+    z-index: 12;
+    float: left;
 }
 
 .botoxcard {
@@ -802,9 +823,20 @@ section:last-child {
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
     max-width: 15%;
-    margin-left: 60%;
+    margin-left: 55%;
     position: relative; 
     z-index: 5;
+    float: left;
+}
+
+.botoxcircle {
+    background: white;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin-left: 75%;
+    position: relative; 
+    z-index: 13;
 }
 
 .surgerycard {
@@ -816,9 +848,19 @@ section:last-child {
     text-align: left;
     max-width: 15%;
     margin-left: 80%;
-    float: left;
     position: relative; 
     z-index: 6;
+}
+
+.surgeoncircle {
+    background: white;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin-left: 60%;
+    position: relative; 
+    z-index: 14;
+    float: left;
 }
 
 .supportcard {
