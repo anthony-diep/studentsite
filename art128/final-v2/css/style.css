@@ -361,7 +361,7 @@ body {
 
 .site-nav a {
     display: block;
-    padding: .5em 1em;
+    padding: .5em .75em;
 }
 
 .menu-button {
@@ -453,7 +453,7 @@ body {
 } */
 
 .site-footer {
-    padding: 1em .5em 2em .5em;
+    padding: 1em 0 2em 0;
 }
 
 /* SECTIONS */
@@ -485,7 +485,7 @@ section:last-child {
 #support { background-image: url('../img/bg6.png'); }
 
 
-/* SECTIONS */
+/* ABOUT SECTION */
 
 .aboutimage {
     max-width: 100%;
@@ -520,6 +520,8 @@ section:last-child {
         padding: 4em;
     }
 }
+
+/* AREA SECTION */
 
 .arearow1{
     display: flex;
@@ -579,7 +581,7 @@ section:last-child {
     border-radius: 100%;
     margin: 2em 0;
     padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
+    box-shadow: 10px 10px 0 0 black;
     align-content: center;
     max-width: 35%;
     /* height: 400px;
@@ -592,7 +594,7 @@ section:last-child {
     border-radius: 25% 20% 25% 20%;
     margin: 2em 0;
     padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
+    box-shadow: 10px 10px 0 0 black;
     text-align: center;
     max-width: 35%;
     /* height: 400px;
@@ -603,10 +605,10 @@ section:last-child {
 .bubble3card {
     background: white;
     border: 5px solid black;
-    border-radius: 20% 30% 20% 15%;
+    border-radius: 20% 30% 20% 8%;
     margin: 2em 0;
     padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
+    box-shadow: 10px 10px 0 0 black;
     text-align: center;
     max-width: 35%;
     /* height: 400px;
@@ -619,8 +621,8 @@ section:last-child {
     border-radius: 70%;
     margin: 2em 0;
     padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
-    text-align: center;
+    box-shadow: 10px 10px 0 0 black;
+    align-items: center;
     max-width: 35%;
     /* height: 400px;
     width: 30%; */
@@ -650,273 +652,457 @@ section:last-child {
         max-width: 50%;
         margin: 8em auto;
     }
+
+    .arearow2{
+        display: flex;
+        margin-left: 13%;
+        max-height: 550px;
+        max-width: 100%;
+    }
+
+    .feetimage {
+        max-width: 70%;
+        margin: 2em 0 0 6em;
+        transform: rotate(-20deg);
+    }
+
+    .armpitimage {
+        max-width: 62%;
+        margin: -2em 0 0 6em;
+    }
+
+    .palmimage {
+        max-width: 80%;
+        margin: 5em 5em 0 -2em;
+    }
+    
+    .headimage {
+        max-width: 100%;
+        margin: 0 10em 0 10em; /* top right bottom left */
+    }
 }
 
-.typescard {
+/* TYPES SECTION */
+
+.generalizedcard {
     background: white;
     border: 5px solid black;
-    margin: 2em 0;
+    margin: 0 auto ;
     padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
-    text-align: center;
+    box-shadow: -15px -15px 0 0 black;
+    text-align: left;
+    max-width: 65%;
 }
 
+.palmarcard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 65%;
+}
+
+.axillarycard {
+    background: white;
+    border: 5px solid black;
+    margin: 4em auto 0;
+    padding: 2em;
+    box-shadow: -15px -15px 0 0 black;
+    text-align: left;
+    max-width: 65%;
+}
+
+.facialcard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 65%;
+}
+
+.primarycard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 75%;
+}
+
+.secondarycard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 75%;
+}
+
+/* .typescontainer {
+    padding: 0 1em;
+    margin: 0 auto;
+} */
+
+@media (min-width:768px) { 
+    #types .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .generalizedcard {
+        margin: 0 3em 2em -5em; /* top right bottom left */
+    }
+    
+    .palmarcard {
+        margin: 0 3em 2em 0;
+    }
+    
+    .axillarycard {
+        margin: 0 3em 2em 0;
+    }
+    
+    .facialcard {
+        margin: 0 -5em 2em 0;
+    }
+    
+    .primarycard {
+        margin: 2em 7em 0 2em;
+        padding: 2em;
+        max-width: 35%;
+    }
+    
+    .secondarycard {
+        margin: 2em 0em 0 5em;
+        padding: 2em;
+        max-width: 35%;
+    }
+}
+
+/* CAUSES SECTION */
+
 .causesimage {
-    max-width: 150%;
-    margin-left: 40%;
+    max-width: 100%;
 }
 
 .causescard {
     background: white;
     border: 5px solid black;
     border-radius: 100%;
-    margin: 2em 0;
+    margin: 1em 1em;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: center;
-    max-width: 20%;
-    margin-left: 55%;
-}
-
-.treatmentscard {
-    background: white;
-    border: 5px solid black;
-    margin: 2em 0;
-    padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
-    text-align: left;
-    max-width: 25%;
-    margin-left: 68%;
-}
-
-.lfootimage {
-    float: left;
-    margin-left: -5%; 
-    position: relative; 
-    z-index: 1;
-    max-width: 5%;
-}
-
-.rfootimage {
-    float: left;
-    margin-left: 52%;
-    position: relative; 
-    z-index: 2;
-}
-
-.generalizedcard {
-    background: white;
-    border: 5px solid black;
-    margin: 2em 0;
-    padding: 2em;
-    box-shadow: -15px -15px 0 0 black;
-    text-align: left;
-    max-width: 15%;
-    /* margin-left: 10%;
-    float: left; */
-}
-
-.palmarcard {
-    background: white;
-    border: 5px solid black;
-    margin: 2em 0;
-    padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
-    text-align: left;
-    max-width: 15%;
-    margin-left: 5%;
-    /* float: left; */
-}
-
-.axillarycard {
-    background: white;
-    border: 5px solid black;
-    margin: 2em 0;
-    padding: 2em;
-    box-shadow: -15px -15px 0 0 black;
-    text-align: left;
-    max-width: 15%;
-    margin-left: 7%;
-    /* float: left; */
-}
-
-.facialcard {
-    background: white;
-    border: 5px solid black;
-    margin: 2em 0;
-    padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
-    text-align: left;
-    max-width: 15%;
-    margin-left: 5%;
-}
-
-.primarycard {
-    background: white;
-    border: 5px solid black;
-    margin: 2em 0;
-    padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
-    text-align: left;
-    max-width: 22%;
-    /* margin-left: 20%; */
-}
-
-.secondarycard {
-    background: white;
-    border: 5px solid black;
-    margin: 2em 0;
-    padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
-    text-align: left;
-    max-width: 22%;
-    margin-left: 20%;
+    max-width: 100%;
 }
 
 .overactivitycard {
     background: white;
     border: 5px solid black;
-    margin: 2em 0;
+    margin: 2em auto;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
-    max-width: 20%;
-    margin-left: 5%;
+    max-width: 70%;
 }
 
 .geneticcard {
     background: white;
     border: 5px solid black;
-    margin: 2em 0;
+    margin: 2em auto;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
-    max-width: 20%;
-    margin-left: 25%;
+    max-width: 70%;
 }
 
 .deficiencyccard {
     background: white;
     border: 5px solid black;
-    margin: 2em 0;
+    margin: 2em auto;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
-    max-width: 20%;
-    margin-left: 5%;
-    float: left;
+    max-width: 70%;
 }
 
-.antipercircle {
+.causescontainer {
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+@media (min-width:768px) { 
+    #causes .container {
+        display: flex;
+        align-items: center;
+    }
+
+    #causes .causescontainer {
+        display: grid;
+    }
+
+    .causescard {
+        border-radius: 100%;
+        margin: 1em 1em;
+        padding: 4em 4em;
+        box-shadow: 15px 15px 0 0 black;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    /* .reorder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reorder > .overactivitycard {order: 1; } 
+    .reorder > .geneticcard {order: 2; } 
+    .reorder > .deficiencyccard {order: 3; } 
+    .reorder > .causescard {order: 4; } 
+    .reorder > .causesimage {order: 5; }  */
+}
+
+/* TREATMENTS SECTION */
+
+.treatmentscard {
     background: white;
-    border-radius: 50%;
-    width: 20%;
-    height: 20%;
-    margin-left: 20%;
-    position: relative; 
-    z-index: 11;
-    float: left;
+    border: 5px solid black;
+    margin: 1em auto 2em;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 85%;
+}
+
+.lfootimage {
+    visibility: hidden;
+    max-width: 1%;
+}
+
+.rfootimage {
+    visibility: hidden;
+    max-width: 1%;
+}
+
+.antiperbubble {
+    background: white;
+    border: 5px solid black;
+    border-radius: 100%;
+    padding: 0 0 0 0;
+    /* position: relative; 
+    z-index: 11; */
+}
+
+.deodorantimg {
+    max-width: 50%;
 }
 
 .antipercard {
     background: white;
     border: 5px solid black;
-    margin: 2em 0;
+    margin: 2em auto;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
-    max-width: 15%;
-    margin-left: 43%;
-    position: relative; 
-    z-index: 3;
+    max-width: 75%;
+    /* position: relative; 
+    z-index: 3; */
+}
+
+.ionbubble {
+    background: white;
+    border: 5px solid black;
+    border-radius: 100%;
+    padding: 3em;
+    /* position: relative; 
+    z-index: 12; */
+}
+
+.ionimg {
+    max-width: 80%;
 }
 
 .ioncard {
     background: white;
     border: 5px solid black;
-    margin: 2em 0;
+    margin: 2em auto 2em;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
-    max-width: 15%;
-    margin-left: 10%;
-    position: absolute; 
-    z-index: 4;
-    float: left;
-}
-
-.ioncircle {
-    background: white;
-    border-radius: 50%;
-    width: 20%;
-    height: 20%;
-    margin-left: 30%;
-    position: relative; 
-    z-index: 12;
-    float: left;
+    max-width: 75%;
+    /* position: absolute; 
+    z-index: 4; */
 }
 
 .botoxcard {
     background: white;
     border: 5px solid black;
-    margin: 2em 0;
+    margin: 2em auto;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
-    max-width: 15%;
-    margin-left: 55%;
-    position: relative; 
-    z-index: 5;
-    float: left;
+    max-width: 75%;
+    /* position: relative; 
+    z-index: 5; */
 }
 
-.botoxcircle {
+.botoxbubble {
     background: white;
     border-radius: 50%;
-    width: 20%;
-    height: 20%;
-    margin-left: 75%;
-    position: relative; 
-    z-index: 13;
+    border: 5px solid black;
+    /* position: relative; 
+    z-index: 13; */
+}
+
+.needleimg {
+    max-width: 50%;
 }
 
 .surgerycard {
     background: white;
     border: 5px solid black;
-    margin: 2em 0;
+    margin: 2em auto;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
-    max-width: 15%;
-    margin-left: 80%;
-    position: relative; 
-    z-index: 6;
+    max-width: 75%;
+    /* position: relative; 
+    z-index: 6; */
 }
 
-.surgeoncircle {
+.surgeonbubble {
     background: white;
     border-radius: 50%;
-    width: 20%;
-    height: 20%;
-    margin-left: 60%;
-    position: relative; 
-    z-index: 14;
-    float: left;
+    border: 5px solid black;
+    /* position: relative; 
+    z-index: 14; */
 }
+
+.surgeonimg {
+    max-width: 50%;
+}
+
+/* .treatmentcontainer {
+    padding: 0 1em;
+    margin: 0 -5em;
+} */
+
+@media (min-width:768px) { 
+    #treatments .container {
+        display: flex;
+        align-items: center;
+    }
+
+/* .lfootimage {
+    max-width: 100%;
+}
+
+.rfootimage {
+    max-width: 100%;
+} */
+
+.treatmentscard {
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 30%;
+}
+
+.deodorantimg {
+    max-width: 50%;
+}
+
+.antiperbubble {
+    background: white;
+    border: 5px solid black;
+    border-radius: 100%;
+    max-width: 50%;
+    /* position: relative; 
+    z-index: 11; */
+}
+
+.antipercard {
+    margin: 1em 1em;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 100%;
+    /* position: relative; 
+    z-index: 3; */
+}
+
+.ionimg {
+    max-width: 80%;
+}
+
+.ionbubble {
+    background: white;
+    border: 5px solid black;
+    border-radius: 100%;
+    max-width: 20%;
+    /* position: relative; 
+    z-index: 12; */
+}
+
+.ioncard {
+    margin: 1em 1em;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 100%;
+    /* position: absolute; 
+    z-index: 4; */
+}
+
+.botoxbubble {
+    background: white;
+    border-radius: 50%;
+    border: 5px solid black;
+    /* position: relative; 
+    z-index: 13; */
+}
+
+.botoxcard {
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 80%;
+    /* position: relative; 
+    z-index: 5; */
+}
+
+.surgerycard {
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 75%;
+    /* position: relative; 
+    z-index: 6; */
+}
+}
+
+/* SUPPORT SECTION */
 
 .supportcard {
     background: white;
     border: 5px solid black;
-    margin: 2em 0;
+    margin: 2em auto;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
 }
 
+/* MENU CARDS */
+
 .areascardtop {
     background: white;
     border: 2px solid black;
-    max-width: 200px;
     margin: .5em;
     padding: 0;
     box-shadow: 2px 2px 0 0 black;
@@ -928,7 +1114,6 @@ section:last-child {
 .treatmentscardtop {
     background: white;
     border: 2px solid black;
-    max-width: 200px;
     margin: .5em;
     padding: 0;
     box-shadow: 2px 2px 0 0 black;
@@ -940,7 +1125,6 @@ section:last-child {
 .typescardtop {
     background: white;
     border: 2px solid black;
-    max-width: 200px;
     margin: .5em;
     padding: 0;
     box-shadow: 2px 2px 0 0 black;
@@ -952,7 +1136,6 @@ section:last-child {
 .causescardtop {
     background: white;
     border: 2px solid black;
-    max-width: 200px;
     margin: .5em;
     padding: 0;
     box-shadow: 2px 2px 0 0 black;
@@ -964,7 +1147,6 @@ section:last-child {
 .treatmentscardtop {
     background: white;
     border: 2px solid black;
-    max-width: 200px;
     margin: .5em;
     padding: 0;
     box-shadow: 2px 2px 0 0 black;
@@ -976,7 +1158,6 @@ section:last-child {
 .supportcardtop {
     background: white;
     border: 2px solid black;
-    max-width: 200px;
     margin: .5em;
     padding: 0;
     box-shadow: 2px 2px 0 0 black;
@@ -1063,14 +1244,14 @@ input[type="submit"] {
 
 .section-title-left {
     text-align: left;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .section-title-left::after {
     content: "";
     display: block;
-    width: 1000px;
-    margin: 0.5em auto;
+    max-width: 70%;
+    margin: 0.5em 0;
     border-bottom: 4px solid black;
 }
 
