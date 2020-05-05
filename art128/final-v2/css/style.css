@@ -501,15 +501,17 @@ section:last-child {
     margin: 0 auto;
 }
 
-.aboutcard {
-    background: white;
-    border: 10px solid black;
-    margin: 2em 2em 2em 2em;
-    padding: 2em;
-    /* max-width: 40%; */
-    box-shadow: 15px 15px 0 0 black;
-    /* position: relative; bottom:500px; */
-}
+.aboutbox {
+    /* background: white; */
+    margin: 0 1em;
+    padding: 1em 4.75em 2em 4.75em;
+    max-width: 100%;
+    background-image: url('../img/bubbleabout.png');
+    background-size: 99%; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+ 
 
 @media (min-width:768px) {
     #about .container {
@@ -522,10 +524,14 @@ section:last-child {
         margin-left: -70%;
     }
 
-    .aboutcard {
-        max-width: 40%;
-        /* margin: 25em 2em 35em 2em; */
-        padding: 4em;
+    .aboutbox {
+    margin: 0 0 0 0;
+    padding: 9em 8em 9em 7em;
+    max-width: 50%;
+    background-image: url('../img/bubbleabout.png');
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
     }
 }
 
@@ -888,51 +894,59 @@ section:last-child {
 }
 
 .lfootimage {
-    visibility: hidden;
-    max-width: 1%;
+    /* visibility: hidden; */
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 1;
 }
 
 .rfootimage {
-    visibility: hidden;
-    max-width: 1%;
+    /* visibility: hidden; */
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 1;
 }
 
-.antiperbubble {
+/* .antiperbubble {
     background: white;
     border: 5px solid black;
     border-radius: 100%;
-    padding: 0 0 0 0;
-    /* position: relative; 
-    z-index: 11; */
-}
+    position: relative; 
+    z-index: 2;
+} */
 
 .deodorantimg {
-    max-width: 50%;
+    margin: 0 0 0 12em;
+    max-width: 55%;
+    position: relative; 
+    z-index: 2;
 }
 
 .antipercard {
     background: white;
     border: 5px solid black;
-    margin: 2em auto;
+    margin: 1em auto;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
     max-width: 75%;
-    /* position: relative; 
-    z-index: 3; */
+    position: relative; 
+    z-index: 3;
 }
 
-.ionbubble {
+/* .ionbubble {
     background: white;
     border: 5px solid black;
     border-radius: 100%;
     padding: 3em;
-    /* position: relative; 
-    z-index: 12; */
-}
+    position: relative; 
+    z-index: 12; 
+} */
 
 .ionimg {
-    max-width: 80%;
+    max-width: 65%;
 }
 
 .ioncard {
@@ -955,26 +969,29 @@ section:last-child {
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
     max-width: 75%;
-    /* position: relative; 
-    z-index: 5; */
+    position: relative; 
+    z-index: 2;
 }
 
-.botoxbubble {
+/* .botoxbubble {
     background: white;
     border-radius: 50%;
     border: 5px solid black;
-    /* position: relative; 
-    z-index: 13; */
-}
+    position: relative; 
+    z-index: 2;
+} */
 
 .needleimg {
-    max-width: 50%;
+    margin: 0 0 0 12em;
+    max-width: 60%;
+    position: relative; 
+    z-index: 2;
 }
 
 .surgerycard {
     background: white;
     border: 5px solid black;
-    margin: 2em auto;
+    margin: 1em auto;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
@@ -983,117 +1000,141 @@ section:last-child {
     z-index: 6; */
 }
 
-.surgeonbubble {
+/* .surgeonbubble {
     background: white;
     border-radius: 50%;
     border: 5px solid black;
-    /* position: relative; 
-    z-index: 14; */
-}
+    position: relative; 
+    z-index: 2;
+} */
 
 .surgeonimg {
-    max-width: 50%;
+    max-width: 60%;
+    position: relative; 
+    z-index: 2;
 }
 
-/* .treatmentcontainer {
-    padding: 0 1em;
-    margin: 0 -5em;
-} */
 
 @media (min-width:768px) { 
     #treatments .container {
         display: flex;
-        align-items: center;
     }
 
-/* .lfootimage {
+.lfootimage {
     max-width: 100%;
+    z-index: 3;
 }
 
 .rfootimage {
-    max-width: 100%;
-} */
+    max-width: 120%;
+    margin: 3em 0 0 45em;
+    z-index: 3;
+}
 
 .treatmentscard {
     margin: 2em auto;
     padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
     text-align: left;
     max-width: 30%;
 }
 
 .deodorantimg {
-    max-width: 50%;
+    margin: 10em 2em 0 -9em;
+    max-width: 38%;
+    position: relative; 
+    z-index: 4;
 }
 
-.antiperbubble {
-    background: white;
-    border: 5px solid black;
+/* .antiperbubble {
+    margin: 15% 0 0 13%;
     border-radius: 100%;
-    max-width: 50%;
-    /* position: relative; 
-    z-index: 11; */
-}
+    max-width: 25%;
+    position: relative; 
+    z-index: 4;
+    display: flex;
+} */
 
 .antipercard {
-    margin: 1em 1em;
-    padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
+    margin: 22em 1em 4em 0em;
+    padding: 3em 2em;
     text-align: left;
-    max-width: 100%;
-    /* position: relative; 
-    z-index: 3; */
+    max-width: 30%;
+    position: relative; 
+    z-index: 4;
 }
 
 .ionimg {
-    max-width: 80%;
+    margin: 5em 0 0 -1em;
+    max-width: 45%;
+    position: relative; 
+    z-index: 4;
 }
 
-.ionbubble {
-    background: white;
-    border: 5px solid black;
+/* .ionbubble {
     border-radius: 100%;
     max-width: 20%;
-    /* position: relative; 
-    z-index: 12; */
-}
+    position: relative; 
+    z-index: 4;
+} */
 
 .ioncard {
-    margin: 1em 1em;
-    padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
+    margin: 3em 0 0 -19em;
+    padding: 3em 2em;
     text-align: left;
-    max-width: 100%;
-    /* position: absolute; 
-    z-index: 4; */
+    max-width: 30%;
+    position: relative; 
+    z-index: 4;
 }
 
-.botoxbubble {
-    background: white;
+/* .botoxbubble {
     border-radius: 50%;
     border: 5px solid black;
-    /* position: relative; 
-    z-index: 13; */
+    max-width: 30%;
+    position: relative; 
+    z-index: 4;
+} */
+
+.needleimg {
+    margin: 27em -13em 0 0em;
+    max-width: 40%;
+    position: relative; 
+    z-index: 4;
 }
 
 .botoxcard {
-    padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
+    padding: 3em 2em;
+    margin: 25em 0 0 0;
     text-align: left;
-    max-width: 80%;
-    /* position: relative; 
-    z-index: 5; */
+    max-width: 30%;
+    position: relative; 
+    z-index: 4;
+}
+
+/* .surgeonbubble {
+    border-radius: 50%;
+    max-width: 30%;
+    margin: 0 0 0 75em;
+    position: relative; 
+    z-index: 4;
+    display: flex;
+} */
+
+.surgeonimg {
+    margin: 16em 0 0 0;
+    max-width: 40%;
+    position: relative; 
+    z-index: 4;
 }
 
 .surgerycard {
-    padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
+    padding: 3em 2em;
+    margin: 16em 0 10em 0;
     text-align: left;
-    max-width: 75%;
-    /* position: relative; 
-    z-index: 6; */
-}
-}
+    max-width: 30%;
+    position: relative; 
+    z-index: 4;
+    }
+}     
 
 /* SUPPORT SECTION */
 
