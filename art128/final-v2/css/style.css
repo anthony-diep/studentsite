@@ -417,8 +417,8 @@ body {
     }
 
     .toggle-nav.expanded .site-nav a {
-        background: rgba(235, 93, 11, 0.8);;
-        color: white;
+        background: white;
+        color: black;
         margin: .5em 0;
         padding: 1em;
     }
