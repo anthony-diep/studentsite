@@ -469,7 +469,7 @@ body {
 section {
     padding: 4em 0;    
     background-size: cover;
-    min-height: 70vh;
+    /* min-height: 70vh; */
     display: block;
     place-items: center;
     border-width: 28px 56px 28px 56px; /* top right bottom left */
@@ -543,7 +543,7 @@ section:last-child {
 
 .arearow2{
     display: flex;
-    margin-left: 10%;
+    margin: 3em 1.5em;
 }
 
 .areascard {
@@ -552,7 +552,7 @@ section:last-child {
     border-radius: 100%;
     margin: 0 0;
     padding: 1em;
-    box-shadow: 15px 15px 0 0 black;
+    box-shadow: 10px 10px 0 0 black;
     text-align: center;
     max-height: 50%;
 }
@@ -568,28 +568,27 @@ section:last-child {
     position: relative;
     max-width: 50%;
     top: -5em;
-    /* float: left; */
 }
 
 .feetimage {
-    max-width: 100%;
-    transform: rotate(-20deg);
+    max-width: 50%;
+    margin: 0 1em 0 0;
 }
 
 .armpitimage {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .palmimage {
-    max-width: 100%;
-    margin-top: 40%;
+    max-width: 50%;
+    margin: 0 1em 0 0;
 }
 
 .headimage {
-    max-width: 100%;
+    max-width: 50%;
 }
 
-.bubble1card {
+/* .bubble1card {
     background: white;
     border: 5px solid black;
     border-radius: 100%;
@@ -598,8 +597,6 @@ section:last-child {
     box-shadow: 10px 10px 0 0 black;
     align-content: center;
     max-width: 35%;
-    /* height: 400px;
-    width: 30%; */
 }
 
 .bubble2card {
@@ -611,8 +608,6 @@ section:last-child {
     box-shadow: 10px 10px 0 0 black;
     text-align: center;
     max-width: 35%;
-    /* height: 400px;
-    width: 30%; */
     margin-left: 15%;
 }
 
@@ -625,8 +620,6 @@ section:last-child {
     box-shadow: 10px 10px 0 0 black;
     text-align: center;
     max-width: 35%;
-    /* height: 400px;
-    width: 30%; */
 }
 
 .bubble4card {
@@ -638,10 +631,8 @@ section:last-child {
     box-shadow: 10px 10px 0 0 black;
     align-items: center;
     max-width: 35%;
-    /* height: 400px;
-    width: 30%; */
     margin-left: 15%;
-}
+} */
 
 @media (min-width:768px) { 
     .lhandimage,
@@ -667,32 +658,24 @@ section:last-child {
         margin: 8em auto;
     }
 
-    .arearow2{
-        display: flex;
-        margin-left: 13%;
-        max-height: 550px;
-        max-width: 100%;
-    }
-
     .feetimage {
-        max-width: 70%;
-        margin: 2em 0 0 6em;
-        transform: rotate(-20deg);
+        max-width: 40%;
+        margin: 0 3em 0 5em;
     }
 
     .armpitimage {
-        max-width: 62%;
-        margin: -2em 0 0 6em;
+        max-width: 100%;
+        margin: 0 0 0 0em;
     }
 
     .palmimage {
-        max-width: 80%;
-        margin: 5em 5em 0 -2em;
+        max-width: 100%;
+        margin: 0 3em 0 5em;
     }
     
     .headimage {
         max-width: 100%;
-        margin: 0 10em 0 10em; /* top right bottom left */
+        margin: 0 0 0 0em;
     }
 }
 
@@ -845,28 +828,34 @@ section:last-child {
     max-width: 70%;
 }
 
-.causescontainer {
-    padding: 0 1em;
-    margin: 0 auto;
-}
-
 @media (min-width:768px) { 
     #causes .container {
         display: flex;
         align-items: center;
     }
 
-    #causes .causescontainer {
-        display: grid;
+    .causescard {
+        margin: -50em -3em 0 10em;
+        padding: 4em 4em;
+        max-width: 50%;
     }
 
-    .causescard {
-        border-radius: 100%;
-        margin: 1em 1em;
-        padding: 4em 4em;
-        box-shadow: 15px 15px 0 0 black;
-        text-align: center;
-        max-width: 100%;
+    .overactivitycard {
+        margin: -15em 0em 0 -130em;
+        padding: 2em;
+        max-width: 45%;
+    }
+    
+    .geneticcard {
+        margin: 25em 0 0 -3em;
+        padding: 2em;
+        max-width: 45%;
+    }
+    
+    .deficiencyccard {
+        margin: 60em 0em 0 -60em;
+        padding: 2em;
+        max-width: 45%;
     }
 
     /* .reorder {
@@ -991,7 +980,7 @@ section:last-child {
 .surgerycard {
     background: white;
     border: 5px solid black;
-    margin: 1em auto;
+    margin: 0 auto;
     padding: 2em;
     box-shadow: 15px 15px 0 0 black;
     text-align: left;
@@ -1018,16 +1007,17 @@ section:last-child {
 @media (min-width:768px) { 
     #treatments .container {
         display: flex;
+        align-items: center;
     }
 
 .lfootimage {
-    max-width: 100%;
+    max-width: 40%;
     z-index: 3;
 }
 
 .rfootimage {
-    max-width: 120%;
-    margin: 3em 0 0 45em;
+    max-width: 40%;
+    margin: 0 0 0 53em;
     z-index: 3;
 }
 
@@ -1039,8 +1029,8 @@ section:last-child {
 }
 
 .deodorantimg {
-    margin: 10em 2em 0 -9em;
-    max-width: 38%;
+    margin: 0 2em 0 -15em;
+    max-width: 33%;
     position: relative; 
     z-index: 4;
 }
@@ -1055,8 +1045,8 @@ section:last-child {
 } */
 
 .antipercard {
-    margin: 22em 1em 4em 0em;
-    padding: 3em 2em;
+    margin: 10em 1em 4em 0em;
+    padding: 2em 2em;
     text-align: left;
     max-width: 30%;
     position: relative; 
@@ -1064,8 +1054,8 @@ section:last-child {
 }
 
 .ionimg {
-    margin: 5em 0 0 -1em;
-    max-width: 45%;
+    margin: 5em 0 0 0;
+    max-width: 39%;
     position: relative; 
     z-index: 4;
 }
@@ -1078,8 +1068,8 @@ section:last-child {
 } */
 
 .ioncard {
-    margin: 3em 0 0 -19em;
-    padding: 3em 2em;
+    margin: 3em 0 0 -25em;
+    padding: 2em 2em;
     text-align: left;
     max-width: 30%;
     position: relative; 
@@ -1095,15 +1085,15 @@ section:last-child {
 } */
 
 .needleimg {
-    margin: 27em -13em 0 0em;
-    max-width: 40%;
+    margin: -15em -24em 0 0em;
+    max-width: 35%;
     position: relative; 
     z-index: 4;
 }
 
 .botoxcard {
-    padding: 3em 2em;
-    margin: 25em 0 0 0;
+    padding: 2em 2em;
+    margin: -15em 3em 0 45em;
     text-align: left;
     max-width: 30%;
     position: relative; 
@@ -1120,15 +1110,15 @@ section:last-child {
 } */
 
 .surgeonimg {
-    margin: 16em 0 0 0;
-    max-width: 40%;
+    margin: 13em 2em 0 46em;
+    max-width: 33%;
     position: relative; 
     z-index: 4;
 }
 
 .surgerycard {
-    padding: 3em 2em;
-    margin: 16em 0 10em 0;
+    padding: 2em 2em;
+    margin: 10em -27em 0 0;
     text-align: left;
     max-width: 30%;
     position: relative; 
