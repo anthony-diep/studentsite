@@ -1,0 +1,1384 @@
+/* CSS TABLE OF CONTENTS 
+
+#GLOBALS/BASE
+    #RESET
+    #COLORS
+    #TYPOGRAPHY
+        #BODY
+        #LINKS
+        #HEADINGS
+        #PARAGRAPHS
+        #LISTS
+        #HELPERS
+        #BLOCK QUOTES
+    #MEDIA
+        #IMAGES (RESPONSIVE)
+    #COMPONENTS/UI ELEMENTS
+        #BUTTONS
+    #LAYOUT
+        #CONTAINER
+        #MEDIA QUERIES
+        #GRID SYSTEM
+    #SITE STRUCTURES
+        #SITE HEADER
+            #SITE ID
+        #SITE MAIN
+        #SITE FOOTER
+        #SITE NAV
+            #TOGGLE NAV
+        #SECTIONS
+        #SUB PAGES
+*/
+
+
+/* GLOBAL RESET */
+* { box-sizing: border-box;} /* ASTERICK SET EVERYTHING TO NOT RENDER PADDING AND BORDER */
+body {margin: 0;}
+
+/* GLOBAL COLORS */
+body {
+    background: rgb(247, 245, 245);
+    }
+
+    a { color: rgb(61, 61, 54); }
+/* GLOBAL TYPOGRAPHY */
+/* Reference
+	62.5%  => 10px
+	68.8%  => 11px
+	75%    => 12px
+	81.3%  => 13px
+	87.5%  => 14px
+	100%   => 16px
+	112.5% => 18px
+	125%   => 20px
+*/
+body {
+    font-family: Helvetica, Arial, sans-serif; /* FONT STACK */
+    font-size: 100%; /* THIS SETS 1em EQUAL TO 16px */
+    line-height: 1.4;
+    /* align-content: center; */
+    /* text-align: center; */
+    }
+    
+h1 {
+    font-family: "badaboom-pro", impact, sans-serif; /* FONT STACK */
+    font-style: italic; 
+    }
+
+nav, h2, h3, h4 {
+    font-family: 'Kalam', cursive;
+}
+
+/* HEADING */
+h1,h2,h3,h4,h5,h6 {
+    margin: .5em 0;
+}
+
+h1 {
+    font-size: 4em; /* 48px based on a 16px em */
+    line-height: 1; /*LINE HEIGHT ADJUST LEADING */
+}
+
+h2 {
+    font-size: 2.25em; /* 36px based on a 16px em */
+    line-height: 1.1;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em; /* 24px based on a 16px em */
+    line-height: 1.2;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.5em; /* 24px based on a 16px em */
+    line-height: 1.2;
+}
+
+h5 {
+    font-size: 1.125em; /* 18px based on a 16px em */
+    line-height: 1.4;
+}
+
+h6 {
+    font-size: 1em; /* 16px based on a 16px em */
+}
+
+.typesheader {
+    text-align: center;
+    
+}
+
+/* PARAGRAPH */
+p {
+    max-width: 35em; /* EM DETERMINED BY NUMBER OF WORDS */
+}
+
+/* TYPE SPECIMEN */
+
+.headline {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.subheadline {
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: normal;
+    color: rgba(0,0,0,.7);
+}
+
+.date {
+    color: rgba(0,0,0,5);
+}
+
+/* LINK */
+a {
+    color: rgba(red, green, blue, alpha);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(235, 93, 11, 0.8);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgba(rgb(146, 107, 107), green, blue, alpha)
+}
+
+/* HELPER */
+@media (min-width:768px) {
+    .hideonlarge {
+        visibility: hidden;
+    }
+}
+
+/* MEDIA */
+img {
+    max-width: 100%; /*2 lines universal code set responsive images */
+    height: auto;
+}
+
+/* BUTTONS */
+.button,
+button,
+input[type="submit"]{
+    font-size: 1em;
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 1em 1.5em; /* THIS ADJUST THE SIZE OF THE BUTTON */
+    border-radius: .5em; /* THIS ADJUST THE SHAPE OF THE BUTTON*/
+    text-transform: uppercase;
+    border-spacing: .05em;
+    line-height: 1;
+    text-align: center;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover {
+    color: white;
+    background-color: navy;
+    text-decoration: none;
+}
+
+.button.alt {
+    background-color: transparent;
+    color: navy;
+    border: 1px solid navy;
+}
+
+.button.alt:hover {
+    background-color: navy;
+    color: white;
+}
+
+/* BASE LAYOUT */
+
+/* CONTAINER */
+
+
+
+/* MEDIA QUERIES */
+
+/* FOR SMALL-SIZED DEVICES (PHONE) */
+body {
+    font-size: 87.5%; /* 14px */
+}
+
+.container {
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+/* FOR MID-SIZED DEVICES (TABLET) */
+@media (min-width:768px) {
+}
+
+/* FOR LARGE-SIZED DEVICES (LAPTOP) */
+@media (min-width:1000px) {
+    body {
+        font-size: 100%; /* 16px */
+    }
+    .container {
+        max-width: 1000px; 
+    }
+}
+
+/* FOR EXTRA-LARGE-SIZED DEVICES (DESKTOP) */
+@media (min-width:1200px) {
+    body {
+        font-size: 112.5%; /* 18px */
+    }
+    .container {
+        max-width: 1200px; 
+    }
+}
+
+/* GRID SYSTEM */
+
+.column {
+    margin-top: 1%; /* ADJUST GAP BETWEEN GRID */
+    margin-bottom: 1%; /* ADJUST GAP BETWEEN GRID */
+}
+
+
+
+.typerow1 {
+    display: flex;
+    margin-left: 17%;
+}
+
+.typerow2{
+    display: flex;
+    margin-left: 25%;
+}
+
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        margin-left: -10%;
+        margin-right: -1%;
+    }
+    .column {
+        flex-grow: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .one-whole { width: 100%; }
+    .one-half { width: 48%; }
+    .one-third { width: 31.3333%; }
+    .push-one-third { margin-left: 34.3333%; }
+    .two-thirds { width: 64.6666%; }
+    .one-fourth { width: 23%; }
+    .push-one-fourth { margin-left: 26%; }
+
+    .row.centered {
+        justify-content: center;
+    }
+
+    .column.centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* SITE STRUCTURE */
+
+
+.site-header {
+    padding: 1em .5em;
+}
+
+@media (min-width: 768px) {
+    .site-header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.site-header,
+.site-footer {
+    text-align: center;
+}
+
+.site-header a,
+.site-footer a {
+    color: rgba(0,0,0,8);
+    text-decoration: none;
+}
+
+.site-header a:hover,
+.site-footer a:hover {
+    color: rgba(0,0,0,1);
+}
+
+/* .site-id {
+    
+} */
+
+.site-id .logo {
+    max-width: 150px;
+}
+
+.site-id h1 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.site-id a {
+    display: inline-block;
+    padding: .25em 0;
+}
+
+/* STICKY header - works with a class="sticky" on .site-header */
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+    background-color:transparent;
+  }
+  
+.active {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.site-header.sticky + .site-main {
+    padding-top: 3em;
+  }
+
+/* SITE NAV */
+.site-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.site-nav li {
+    list-style: none;
+}
+
+.site-nav a {
+    display: block;
+    padding: .5em .75em;
+}
+
+.menu-button {
+    position: absolute;
+    left: -9999px;
+    padding: .5em 1em;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+.menu-button::selection {
+    color: none;
+    background: none;
+}
+
+/* TOGGLE NAV */
+@media (max-width: 767px) {
+
+    .toggle-nav .site-id h1 {
+        text-align: left;
+    }
+
+    .toggle-nav .menu-button {
+        position: absolute;
+        left:auto;
+        top: 1em;
+        right: 1.5em;
+    }
+    .toggle-nav .site-nav {
+        text-align: center;
+    }
+
+    /* HIDE NAV ON SMALL SCREEN */
+    .toggle-nav .site-nav ul {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .toggle-nav.expanded .site-nav ul {
+        position: static;
+        left: auto;
+        display: block;
+    }
+
+    .toggle-nav.expanded .site-nav a {
+        background: white;
+        color: black;
+        margin: .5em 0;
+        padding: 1em;
+    }
+
+    .toggle-nav.expanded .site-nav a:hover {
+        background: gray;
+    }
+}
+/* ANIMATE SITE NAV */
+.toggle-nav .site-nav ul {
+    transition: all 1s ease;
+    max-height: 0;
+}
+
+.toggle-nav.expanded .site-nav ul {
+    max-height: 400px;
+}
+
+/* NAVICON */
+.navicon {
+    color: rgba(0,0,0,0);
+    padding: 0;
+}
+
+.navicon::after {
+    content: "\2630";
+    display: inline-block;
+    color: rgba(0,0,0,1);
+    font-size: 1.5em;
+    transform: rotate(0deg);
+}
+
+.expanded .navicon::after {
+    content: "\2715";
+    transition: transform .4s ease-out;
+    transform: rotate(-90deg);
+}
+/* .site-main {
+    
+} */
+
+.site-footer {
+    padding: 1em 0 2em 0;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 4em 0;    
+    background-size: cover;
+    /* min-height: 70vh; */
+    display: block;
+    place-items: center;
+    border-width: 28px 56px 28px 56px; /* top right bottom left */
+    border-style: solid;
+    border-color: white;
+}
+
+section:nth-child(even) {
+    background-color: rgba(0,0,0,.025);
+}
+
+section:last-child {
+    padding-bottom: 10em;
+}
+
+#about { background-image: url('../img/bg1.png'); }
+#areas { background-image: url('../img/bg2.png'); }
+#types { background-image: url('../img/bg3.png'); }
+#causes { background-image: url('../img/bg4.png'); }
+#treatments { background-image: url('../img/bg5.png'); }
+#support { background-image: url('../img/bg6.png'); }
+
+
+/* ABOUT SECTION */
+
+.aboutimage {
+    max-width: 100%;
+    /* padding: 0 1em; */
+    margin: 0 auto;
+}
+
+.aboutbox {
+    /* background: white; */
+    margin: 0 1em;
+    padding: 1em 4.75em 2em 4.75em;
+    max-width: 100%;
+    background-image: url('../img/bubbleabout.png');
+    background-size: 99%; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+ 
+
+@media (min-width:768px) {
+    #about .container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .aboutimage {
+        max-width: 90%;
+        margin-left: -70%;
+    }
+
+    .aboutbox {
+    margin: 0 0 0 0;
+    padding: 9em 8em 9em 7em;
+    max-width: 50%;
+    background-image: url('../img/bubbleabout.png');
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+}
+
+/* AREA SECTION */
+
+.arearow1{
+    display: flex;
+}
+
+.arearow2{
+    display: flex;
+    margin: 3em 1.5em;
+}
+
+.areascard {
+    background: white;
+    border: 5px solid black;
+    border-radius: 100%;
+    margin: 0 0;
+    padding: 1em;
+    box-shadow: 10px 10px 0 0 black;
+    text-align: center;
+    max-height: 50%;
+}
+
+.rhandimage {
+    position: relative;
+    max-width: 54%;
+    top: -5em;
+    /* margin-left: 70%; */
+}
+
+.lhandimage {
+    position: relative;
+    max-width: 50%;
+    top: -5em;
+}
+
+.feetimage {
+    max-width: 50%;
+    margin: 0 1em 0 0;
+}
+
+.armpitimage {
+    max-width: 50%;
+}
+
+.palmimage {
+    max-width: 50%;
+    margin: 0 1em 0 0;
+}
+
+.headimage {
+    max-width: 50%;
+}
+
+/* .bubble1card {
+    background: white;
+    border: 5px solid black;
+    border-radius: 100%;
+    margin: 2em 0;
+    padding: 2em;
+    box-shadow: 10px 10px 0 0 black;
+    align-content: center;
+    max-width: 35%;
+}
+
+.bubble2card {
+    background: white;
+    border: 5px solid black;
+    border-radius: 25% 20% 25% 20%;
+    margin: 2em 0;
+    padding: 2em;
+    box-shadow: 10px 10px 0 0 black;
+    text-align: center;
+    max-width: 35%;
+    margin-left: 15%;
+}
+
+.bubble3card {
+    background: white;
+    border: 5px solid black;
+    border-radius: 20% 30% 20% 8%;
+    margin: 2em 0;
+    padding: 2em;
+    box-shadow: 10px 10px 0 0 black;
+    text-align: center;
+    max-width: 35%;
+}
+
+.bubble4card {
+    background: white;
+    border: 5px solid black;
+    border-radius: 70%;
+    margin: 2em 0;
+    padding: 2em;
+    box-shadow: 10px 10px 0 0 black;
+    align-items: center;
+    max-width: 35%;
+    margin-left: 15%;
+} */
+
+@media (min-width:768px) { 
+    .lhandimage,
+    .rhandimage {
+        position: relative;
+        top: auto;
+        margin-top: -10em;
+    }
+
+    .lhandimage {
+        position: relative;
+        max-width: 19%;
+        left: 11em;
+    }
+    .rhandimage {
+        position: relative;
+        max-width: 22%;
+        right: 11em;
+    }
+
+    .areascard {
+        max-width: 50%;
+        margin: 8em auto;
+    }
+
+    .feetimage {
+        max-width: 40%;
+        margin: 0 3em 0 5em;
+    }
+
+    .armpitimage {
+        max-width: 100%;
+        margin: 0 0 0 0em;
+    }
+
+    .palmimage {
+        max-width: 100%;
+        margin: 0 3em 0 5em;
+    }
+    
+    .headimage {
+        max-width: 100%;
+        margin: 0 0 0 0em;
+    }
+}
+
+/* TYPES SECTION */
+
+.generalizedcard {
+    background: white;
+    border: 5px solid black;
+    margin: 0 auto ;
+    padding: 2em;
+    box-shadow: -15px -15px 0 0 black;
+    text-align: left;
+    max-width: 65%;
+}
+
+.palmarcard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 65%;
+}
+
+.axillarycard {
+    background: white;
+    border: 5px solid black;
+    margin: 4em auto 0;
+    padding: 2em;
+    box-shadow: -15px -15px 0 0 black;
+    text-align: left;
+    max-width: 65%;
+}
+
+.facialcard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 65%;
+}
+
+.primarycard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 75%;
+}
+
+.secondarycard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 75%;
+}
+
+/* .typescontainer {
+    padding: 0 1em;
+    margin: 0 auto;
+} */
+
+@media (min-width:768px) { 
+    #types .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .generalizedcard {
+        margin: 0 3em 2em -5em; /* top right bottom left */
+    }
+    
+    .palmarcard {
+        margin: 0 3em 2em 0;
+    }
+    
+    .axillarycard {
+        margin: 0 3em 2em 0;
+    }
+    
+    .facialcard {
+        margin: 0 -5em 2em 0;
+    }
+    
+    .primarycard {
+        margin: 2em 7em 0 2em;
+        padding: 2em;
+        max-width: 35%;
+    }
+    
+    .secondarycard {
+        margin: 2em 0em 0 5em;
+        padding: 2em;
+        max-width: 35%;
+    }
+}
+
+/* CAUSES SECTION */
+
+.causesimage {
+    max-width: 100%;
+}
+
+.causescard {
+    background: white;
+    border: 5px solid black;
+    border-radius: 100%;
+    margin: 1em 1em;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: center;
+    max-width: 100%;
+}
+
+.overactivitycard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 70%;
+}
+
+.geneticcard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: -15px 15px 0px 0px black;
+    text-align: left;
+    max-width: 70%;
+}
+
+.deficiencyccard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 70%;
+}
+
+@media (min-width:768px) { 
+    #causes .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .causesimage {
+        margin: 0 0 -22.5em -6.75em;
+    }
+    
+    .causescard {
+        margin: -45em -7em 0 17em;
+        padding: 4em 4em;
+        max-width: 50%;
+    }
+
+    .overactivitycard {
+        margin: -15em 0em 0 -128em;
+        padding: 2em;
+        max-width: 45%;
+    }
+    
+    .geneticcard {
+        margin: 25em 0 0 -8em;
+        padding: 2em;
+        max-width: 45%;
+    }
+    
+    .deficiencyccard {
+        margin: 60em 0em 0 -47em;
+        padding: 2em;
+        max-width: 45%;
+    }
+
+    /* .reorder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reorder > .overactivitycard {order: 1; } 
+    .reorder > .geneticcard {order: 2; } 
+    .reorder > .deficiencyccard {order: 3; } 
+    .reorder > .causescard {order: 4; } 
+    .reorder > .causesimage {order: 5; }  */
+}
+
+/* TREATMENTS SECTION */
+
+.treatmentscard {
+    background: white;
+    border: 5px solid black;
+    margin: 1em auto 2em;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 85%;
+}
+
+.lfootimage {
+    /* visibility: hidden; */
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+}
+
+.rfootimage {
+    /* visibility: hidden; */
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+}
+
+/* .antiperbubble {
+    background: white;
+    border: 5px solid black;
+    border-radius: 100%;
+    position: relative; 
+    z-index: 2;
+} */
+
+.deodorantimg {
+    margin: 0 0 0 12em;
+    max-width: 55%;
+    position: relative; 
+    z-index: 2;
+}
+
+.antipercard {
+    background: white;
+    border: 5px solid black;
+    margin: 1em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 75%;
+    position: relative; 
+    z-index: 3;
+}
+
+/* .ionbubble {
+    background: white;
+    border: 5px solid black;
+    border-radius: 100%;
+    padding: 3em;
+    position: relative; 
+    z-index: 12; 
+} */
+
+.ionimg {
+    max-width: 65%;
+}
+
+.ioncard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto 2em;
+    padding: 2em;
+    box-shadow: 15px -15px 0 0 black;
+    text-align: left;
+    max-width: 75%;
+    /* position: absolute; 
+    z-index: 4; */
+}
+
+.botoxcard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: -15px 15px 0 0 black;
+    text-align: left;
+    max-width: 75%;
+    position: relative; 
+    z-index: 2;
+}
+
+/* .botoxbubble {
+    background: white;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative; 
+    z-index: 2;
+} */
+
+.needleimg {
+    margin: 0 0 0 12em;
+    max-width: 60%;
+    position: relative; 
+    z-index: 2;
+}
+
+.surgerycard {
+    background: white;
+    border: 5px solid black;
+    margin: 0 auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+    max-width: 75%;
+    /* position: relative; 
+    z-index: 6; */
+}
+
+/* .surgeonbubble {
+    background: white;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative; 
+    z-index: 2;
+} */
+
+.surgeonimg {
+    max-width: 60%;
+    position: relative; 
+    z-index: 2;
+}
+
+
+@media (min-width:768px) { 
+    #treatments .container {
+        display: flex;
+        align-items: center;
+    }
+
+.lfootimage {
+    max-width: 40%;
+    z-index: 3;
+}
+
+.rfootimage {
+    max-width: 40%;
+    margin: 0 0 0 53em;
+    z-index: 3;
+}
+
+.treatmentscard {
+    margin: 2em auto;
+    padding: 2em;
+    text-align: left;
+    max-width: 30%;
+}
+
+.deodorantimg {
+    margin: 0 2em 0 -15em;
+    max-width: 33%;
+    position: relative; 
+    z-index: 4;
+}
+
+/* .antiperbubble {
+    margin: 15% 0 0 13%;
+    border-radius: 100%;
+    max-width: 25%;
+    position: relative; 
+    z-index: 4;
+    display: flex;
+} */
+
+.antipercard {
+    margin: 10em 1em 4em 0em;
+    padding: 2em 2em;
+    text-align: left;
+    max-width: 30%;
+    position: relative; 
+    z-index: 4;
+}
+
+.ionimg {
+    margin: 5em 0 0 0;
+    max-width: 39%;
+    position: relative; 
+    z-index: 4;
+}
+
+/* .ionbubble {
+    border-radius: 100%;
+    max-width: 20%;
+    position: relative; 
+    z-index: 4;
+} */
+
+.ioncard {
+    margin: 3em 0 0 -25em;
+    padding: 2em 2em;
+    text-align: left;
+    max-width: 30%;
+    position: relative; 
+    z-index: 4;
+}
+
+/* .botoxbubble {
+    border-radius: 50%;
+    border: 5px solid black;
+    max-width: 30%;
+    position: relative; 
+    z-index: 4;
+} */
+
+.needleimg {
+    margin: -15em -24em 0 0em;
+    max-width: 35%;
+    position: relative; 
+    z-index: 4;
+}
+
+.botoxcard {
+    padding: 2em 2em;
+    margin: -15em 3em 0 45em;
+    text-align: left;
+    max-width: 30%;
+    position: relative; 
+    z-index: 4;
+}
+
+/* .surgeonbubble {
+    border-radius: 50%;
+    max-width: 30%;
+    margin: 0 0 0 75em;
+    position: relative; 
+    z-index: 4;
+    display: flex;
+} */
+
+.surgeonimg {
+    margin: 13em 2em 0 46em;
+    max-width: 33%;
+    position: relative; 
+    z-index: 4;
+}
+
+.surgerycard {
+    padding: 2em 2em;
+    margin: 10em -27em 0 0;
+    text-align: left;
+    max-width: 30%;
+    position: relative; 
+    z-index: 4;
+    }
+}     
+
+/* SUPPORT SECTION */
+
+.supportcard {
+    background: white;
+    border: 5px solid black;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 15px 15px 0 0 black;
+    text-align: left;
+}
+
+/* MENU CARDS */
+
+.homecardtop {
+    background: white;
+    border: 2px solid black;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.areascardtop {
+    background: white;
+    border: 2px solid black;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.treatmentscardtop {
+    background: white;
+    border: 2px solid black;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.typescardtop {
+    background: white;
+    border: 2px solid black;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.causescardtop {
+    background: white;
+    border: 2px solid black;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.treatmentscardtop {
+    background: white;
+    border: 2px solid black;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.supportcardtop {
+    background: white;
+    border: 2px solid black;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+/* ABOUT */
+.hero {
+    text-align: center;
+    background-color: rgba(204,204,204,1);
+    padding: 6em 1em; 
+}
+
+.hero h2 {
+    font-size: 3em;
+    line-height: 1;
+}
+
+.hero p {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ARTICLE */
+article {
+    padding: 4em 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article .date + p::first-letter {
+    color: red;
+    font-size: 5.6em;
+    line-height: 1;
+    font-weight: bold;
+    float: left;
+    margin: 0 .1em 0 0;
+    padding: 0;
+    display: block;
+}
+
+article .date + p::first-line {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* FORMS */
+
+form {
+    padding: 1em 0;
+}
+
+label, input {
+    display: block;
+}
+
+label, input[type="text"], textarea {
+    width: 100%;
+}
+
+label {
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+input, textarea {
+    background-color: rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 1em;
+    font-size: inherit;
+}
+
+input[type="submit"] {
+    margin-top: 1em;
+}
+
+/* CUSTOM SITE CSS */
+.section-title {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.section-title-left {
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.section-title-left::after {
+    content: "";
+    display: block;
+    max-width: 70%;
+    margin: 0.5em 0;
+    border-bottom: 4px solid black;
+}
+
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+}
+
+.site-header.sticky + main {
+    padding-top: 3em;
+}
+
+/* FOR LAYOUT DEMO PURPOSES ONLY */
+
+.demo .column {
+    background: rgba(136, 12, 12, 0.2);
+    padding: .5em;
+    text-align: center;
+}
+
+.demo .column p {
+    max-width: none;
+}
+
+/* FOR SMALL-SIZED DEVICES (PHONE) */
+body.demo::before{
+    content: "Small Screen < 768px";
+    display: block;
+    background: red;
+    color: white;
+    text-align: center;
+    padding: .2em;
+}
+/* FOR MID-SIZED DEVICES (TABLET) */
+@media (min-width:768px) {
+    body.demo::before { 
+        content: "Mid-Sized Screen 768px - 999px";
+        background: blue;}
+}
+
+/* FOR LARGE-SIZED DEVICES (LAPTOP) */
+@media (min-width:1000px) {
+    body.demo::before { 
+        content: "Large-Sized Screen 1000px - 1199px";
+        background: green;}
+}
+
+/* FOR EXTRA-LARGE-SIZED DEVICES (DESKTOP) */
+@media (min-width:1200px) {
+    body.demo::before { 
+        content: "Mid-Sized Screen > 1200px";
+        background: yellow;}
+}
+
+/* FOR DEV TESTING ONLY */
+/* * {
+    background-color: rgba(255,0,0,.2);
+    color: rgba(255,0,0,.1);
+    box-shadow: 0 0 0 3px inset rgba(255,0,0,1);
+}
+
+.site-header {
+    background-color: rgba(0,255,0,.4);
+    box-shadow: 0 0 0 3px inset rgba(0,255,0,1);
+    display: flex;
+}
+
+.site-main {
+    background-color: rgba(0,0,255,.4);
+    box-shadow: 0 0 0 3px inset rgba(0,0,255,1);
+}
+
+.site-footer {
+    background-color: rgba(255,255,0,.4);
+    box-shadow: 0 0 0 3px inset rgba(255,255,0,1);
+} */
