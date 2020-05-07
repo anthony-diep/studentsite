@@ -343,14 +343,14 @@ body {
     background-color:transparent;
   }
   
-  .site-header.sticky.active {
+.active {
     background: #fff;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
 
-  .site-header.sticky + .site-main {
+.site-header.sticky + .site-main {
     padding-top: 3em;
   }
 
@@ -424,7 +424,7 @@ body {
     }
 
     .toggle-nav.expanded .site-nav a:hover {
-        background: rgba(170, 62, 0, 0.8);
+        background: gray;
     }
 }
 /* ANIMATE SITE NAV */
@@ -813,7 +813,7 @@ section:last-child {
     border: 5px solid black;
     margin: 2em auto;
     padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
+    box-shadow: -15px 15px 0px 0px black;
     text-align: left;
     max-width: 70%;
 }
@@ -834,26 +834,30 @@ section:last-child {
         align-items: center;
     }
 
+    .causesimage {
+        margin: 0 0 -22.5em -6.75em;
+    }
+    
     .causescard {
-        margin: -50em -3em 0 10em;
+        margin: -45em -7em 0 17em;
         padding: 4em 4em;
         max-width: 50%;
     }
 
     .overactivitycard {
-        margin: -15em 0em 0 -130em;
+        margin: -15em 0em 0 -128em;
         padding: 2em;
         max-width: 45%;
     }
     
     .geneticcard {
-        margin: 25em 0 0 -3em;
+        margin: 25em 0 0 -8em;
         padding: 2em;
         max-width: 45%;
     }
     
     .deficiencyccard {
-        margin: 60em 0em 0 -60em;
+        margin: 60em 0em 0 -47em;
         padding: 2em;
         max-width: 45%;
     }
@@ -943,7 +947,7 @@ section:last-child {
     border: 5px solid black;
     margin: 2em auto 2em;
     padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
+    box-shadow: 15px -15px 0 0 black;
     text-align: left;
     max-width: 75%;
     /* position: absolute; 
@@ -955,7 +959,7 @@ section:last-child {
     border: 5px solid black;
     margin: 2em auto;
     padding: 2em;
-    box-shadow: 15px 15px 0 0 black;
+    box-shadow: -15px 15px 0 0 black;
     text-align: left;
     max-width: 75%;
     position: relative; 
@@ -1138,6 +1142,17 @@ section:last-child {
 }
 
 /* MENU CARDS */
+
+.homecardtop {
+    background: white;
+    border: 2px solid black;
+    margin: .5em;
+    padding: 0;
+    box-shadow: 2px 2px 0 0 black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
 
 .areascardtop {
     background: white;
