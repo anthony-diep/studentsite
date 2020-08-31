@@ -88,6 +88,29 @@ h3 {
         justify-content: center;
         align-items: center;
     }
+
+    /* TWO COL LIST */
+    .list-two-col {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .list-two-col ul {
+        margin-bottom: 1em;
+    }
+
+    .list-two-col ul ul{
+        margin-bottom: 0;
+    }
+
+    .list-two-col li {
+        padding-right: 2em;
+    }
+
+    .list-assignments li li {
+        color: khaki;
+    }
+
    /* *, body{
         background: rgba(0,0,0,.1);
         border: 1px solid black;
